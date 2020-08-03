@@ -3,7 +3,6 @@ class PigLatinizer
   
   def initialize(text)
     @text = text 
-    @text.piglatinize
   end 
   
   def piglatinize
