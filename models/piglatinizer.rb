@@ -5,9 +5,9 @@ class PigLatinizer
     @text = text 
   end 
   
-  def piglatinize(text)
+  def piglatinize_string(text)
     a = text.split(" ")
-    b = a.map {|word| piglatinize_word(word)}
+    b = a.map {|word| piglatinize(word)}
     b.join(" ")
   end
   
