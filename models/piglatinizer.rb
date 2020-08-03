@@ -6,7 +6,7 @@ class PigLatinizer
   end 
   
   def piglatinize
-    a = text.split(" ")
+    a = words.split(" ")
     b = a.map {|word| piglatinize_word(word)}
     b.join(" ")
   end
