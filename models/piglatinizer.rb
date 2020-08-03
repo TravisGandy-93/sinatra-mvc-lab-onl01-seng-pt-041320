@@ -7,11 +7,11 @@ class PigLatinizer
   
   def piglatinize_string
     a = text.split(" ")
-    b = a.map {|word| piglatinize_word(word)}
+    b = a.map {|word| piglatinize(word)}
     b.join(" ")
   end
   
-  def piglatinize_word(word)
+  def piglatinize(word)
     first_letter = word[0].downcase
     if ["a", "e", "i", "o", "u"].include?(first_letter)
         "#{word}way"
