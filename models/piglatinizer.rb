@@ -3,10 +3,10 @@ class PigLatinizer
   
   def initialize(text)
     @text = text 
-    piglatinize(text)
+    @text.piglatinize
   end 
   
-  def piglatinize(text)
+  def piglatinize
     a = text.split(" ")
     b = a.map {|word| piglatinize_word(word)}
     b.join(" ")
